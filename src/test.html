@@ -1,0 +1,164 @@
+<div>
+  <h1 font-size="16" class="sc-Axmtr iYzqgy">Enforce Your Layout!</h1>
+  <p>
+    This example shows how to enforce your layout with domain-specific
+    constraints. This document will always have a title block at the top and a
+    trailing paragraph. Try deleting them and see what happens!
+  </p>
+  <p>
+    Slate editors can edit complex, nested data structures. And for the most
+    part this is great. But in certain cases inconsistencies in the data
+    structure can be introduced—most often when allowing a user to paste
+    arbitrary richtext content."Normalizing" is how you can ensure that your
+    editor&#x27;s content is always of a certain shape. It&#x27;s similar to
+    "validating", except instead of just determining whether the content is
+    valid or invalid, its job is to fix the content to make it valid again.
+  </p>
+</div>
+<div><p>Deserialized paragraph here.</p></div>
+<div>
+  <p>
+    These are the basic marks. You can customize the type and component for each
+    of these.e
+  </p>
+  <p>
+    <strong>Bold, </strong><em>italic, </em><u>underline, </u
+    ><span class="sc-fznxsB cuxHyi strikethrough">strikethrough, </span
+    ><strong>mixed, </strong><code class="sc-fzpjYC erRYCd">code, </code
+    ><sub>sub, </sub><sup>sup, </sup>
+  </p>
+</div>
+<div>
+  <p>
+    The Highlight plugin enables support for
+    <mark class="sc-fzoXzr gTaOAp">highlights</mark>, useful when reviewing
+    content or highlighting it for future reference.
+  </p>
+</div>
+<div>
+  <h1 font-size="16" class="sc-Axmtr iYzqgy">Elements</h1>
+  <p>These are the most common elements, known as blocks:</p>
+  <h1 font-size="16" class="sc-Axmtr iYzqgy">Heading 1</h1>
+  <h2 font-size="16" class="sc-AxmLO fxriFc">Heading 2</h2>
+  <h3 font-size="16" class="sc-fzozJi haooyy">Heading 3</h3>
+  <h4 font-size="16" class="sc-fzoLsD gEudmP">Heading 4</h4>
+  <h5 font-size="16" class="sc-fzpans fiNxFQ">Heading 5</h5>
+  <h6 font-size="16" class="sc-fzplWN heirJR">Heading 6</h6>
+  <blockquote class="sc-AxgMl cTEzUq">Blockquote</blockquote>
+  <pre class="sc-AxheI flKkIC"><code>Code block</code></pre>
+</div>
+<div>
+  <ul class="sc-fznKkj iKBNUG">
+    <li><p>Bulleted list</p></li>
+  </ul>
+  <ol class="sc-fznZeY dvlaqe">
+    <li><p>Numbered list</p></li>
+  </ol>
+  <p>
+    With Slate you can build complex block types that have their own embedded
+    content and behaviors, like rendering checkboxes inside check list items!
+  </p>
+  <p>Try it out for yourself!</p>
+</div>
+<div>
+  <p>
+    Since the editor is based on a recursive tree model, similar to an HTML
+    document, you can create complex nested structures, like tables:
+  </p>
+  <table class="sc-fzqBZW dmVXSF">
+    <tbody>
+      <tr>
+        <td class="sc-fzokOt hjmskT"></td>
+        <td class="sc-fzokOt hjmskT"><strong>Human</strong></td>
+        <td class="sc-fzokOt hjmskT"><strong>Dog</strong></td>
+        <td class="sc-fzokOt hjmskT"><strong>Cat</strong></td>
+      </tr>
+      <tr>
+        <td class="sc-fzokOt hjmskT"><strong># of Feet</strong></td>
+        <td class="sc-fzokOt hjmskT">2</td>
+        <td class="sc-fzokOt hjmskT">4</td>
+        <td class="sc-fzokOt hjmskT">4</td>
+      </tr>
+      <tr>
+        <td class="sc-fzokOt hjmskT"><strong># of Lives</strong></td>
+        <td class="sc-fzokOt hjmskT">1</td>
+        <td class="sc-fzokOt hjmskT">1</td>
+        <td class="sc-fzokOt hjmskT">9</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    This table is just a basic example of rendering a table, and it doesn&#x27;t
+    have fancy functionality. But you could augment it to add support for
+    navigating with arrow keys, displaying table headers, adding column and
+    rows, or even formulas if you wanted to get really crazy!
+  </p>
+</div>
+<div>
+  <p>
+    In addition to block nodes, you can create inline nodes, like
+    <a href="https://en.wikipedia.org/wiki/Hypertext">hyperlinks</a>!
+  </p>
+  <p>
+    This example shows hyperlinks in action. It features two ways to add links.
+    You can either add a link via the toolbar icon above, or if you want in on a
+    little secret, copy a URL to your keyboard and paste it while a range of
+    text is selected.
+  </p>
+</div>
+<div>
+  <p>
+    This example shows how you might implement a simple @-mentions feature that
+    lets users autocomplete mentioning a user by their username. Which, in this
+    case means Star Wars characters. The mentions are rendered as void inline
+    elements inside the document.
+  </p>
+  <p>
+    Try mentioning characters, like
+    <span
+      data-slate-value="R2-D2"
+      contenteditable="false"
+      style="padding:3px 3px 2px;margin:0 1px;vertical-align:baseline;display:inline-block;border-radius:4px;background-color:#eee;font-size:0.9em;box-shadow:none"
+      >@R2-D2</span
+    >
+    or
+    <span
+      data-slate-value="Mace Windu"
+      contenteditable="false"
+      style="padding:3px 3px 2px;margin:0 1px;vertical-align:baseline;display:inline-block;border-radius:4px;background-color:#eee;font-size:0.9em;box-shadow:none"
+      >@Mace Windu</span
+    >!
+  </p>
+</div>
+<div>
+  <p>
+    In addition to nodes that contain editable text, you can also create other
+    types of nodes, like images or videos.
+  </p>
+  <div>
+    <div contenteditable="false">
+      <img
+        src="https://source.unsplash.com/kFrdX5IeQzI"
+        alt=""
+        class="sc-fznyAO cilSGN"
+      />
+    </div>
+  </div>
+  <p>
+    This example shows images in action. It features two ways to add images. You
+    can either add an image via the toolbar icon above, or if you want in on a
+    little secret, copy an image URL to your keyboard and paste it anywhere in
+    the editor!
+  </p>
+</div>
+<div>
+  <p>
+    In addition to simple image nodes, you can actually create complex embedded
+    nodes. For example, this one contains an input element that lets you change
+    the video being rendered!
+  </p>
+  <p>
+    Try it out! This editor is built to handle Vimeo embeds, but you could
+    handle any type.
+  </p>
+</div>

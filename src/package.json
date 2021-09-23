@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "name": "slate-plugins-playground-v075",
+  "description": "A simple sandbox to reproduce Slate Plugins issues in a pared down editor.",
+  "keywords": [],
+  "main": "index.js",
+  "dependencies": {
+    "@udecode/slate-plugins": "0.75.2",
+    "faker": "4.1.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "slate": "0.60.11",
+    "slate-history": "0.60.11",
+    "slate-hyperscript": "0.60.11",
+    "slate-react": "0.60.15"
+  },
+  "devDependencies": {
+    "typescript": "3.7.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
